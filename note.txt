@@ -91,3 +91,34 @@ DEBUT
     Avancer
     Avancer
 FIN
+
+//Etaoe 3&4 ->  tournerGauche ecris lui toune a droite
+//Etape 6 -> doit tourner a gauche non a droite
+//Etape 7 -> Manque affectation de score <- score + 10 
+
+#Les Types 
+INTEGER 
+STRING
+BOOLEAN
+
+ALGORITHME exerciceAlgo3
+VARIABLE
+    word:STRING
+DEBUT
+    word <- ""
+    Avancer
+    word <- word + "H" //Concatenation de deux chaine de charactères
+    Avancer
+    word <- word + "E"
+    TournerDroite
+    Avancer
+    word <- word + "L"
+    tournerGauche
+    Avancer
+    word <- word + "L"
+    tournerGauche
+    Avancer
+    word <- word + "O"
+    TournerDroite
+    Avancer
+FIN
