@@ -1,0 +1,16 @@
+#Pseudo Code
+
+-> Avancer
+-> TournerGauche
+-> Avancer 
+
+Exercice 
+
+-> TournerDroite
+-> TournerDroite 
+-> Avancer 
+-> TournerDroite 
+-> Avancer
+-> Avancer 
+
+
