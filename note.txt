@@ -4,13 +4,60 @@
 -> TournerGauche
 -> Avancer 
 
-Exercice 
+Exercice 1
 
 -> TournerDroite
 -> TournerDroite 
 -> Avancer 
 -> TournerDroite 
 -> Avancer
--> Avancer 
+-> Avancer
+
+Exercice 2 
+
+-> Avancer
+-> TournerGauche 
+-> Avancer
+-> TournerDroite 
+-> Avancer
+
+Exercice 3 
+
+-> Avancer
+-> TournerGauche
+-> Avancer
+-> TournerDroite
+-> Avancer
+-> TournerDroite
+-> Avancer
+
+Exercice 4
+
+Correct mais peut etre otpimsier
+
+TournerDroite
+TournerDroite
+Avancer
+TournerDroite 
+Avancer
 
 
+#Cours
+// Synthaxe
+
+ALGORITHME testNumero1 (camelCase)
+VARIABLE
+    score:ENTIER // Declaration
+DEBUT
+    score <- 0 //Initialisation
+    Avancer
+    score <- score + 10 //Assignation
+    Avancer
+    score <- score + 10
+    Avancer
+    score <- score + 10
+    Avancer
+    ...
+FIN 
+
+ALGORITHME 
