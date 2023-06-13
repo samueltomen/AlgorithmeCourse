@@ -90,6 +90,4 @@ DEBUT
     //Etape 11 + 12
     Avancer
     Avancer
-
-    
 FIN
