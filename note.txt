@@ -59,4 +59,37 @@ DEBUT
     Avancer
 FIN 
 
-ALGORITHME 
+ALGORITHME exerciceAlgo2
+VARIABLE
+    score:ENTIER
+    vie:ENTIER
+DEBUT
+    score <- 0
+    vie <- 1
+    //Etape1
+    Avancer
+    vie <- vie + 1 // 2
+    //Etape 2 + 3
+    TournerGauche
+    TournerGauche
+    //Etape 4 
+    Avancer
+    //Etape 5 
+    TournerDroite
+    // Etape 6
+    Avancer
+    score <- score + 10
+    //Etape 7 
+    TournerDroite
+    //Etape 8 
+    Avancer
+    score <- score + 10 // 20
+    // Etape 9 + 10
+    TournerGauche
+    TournerGauche
+    //Etape 11 + 12
+    Avancer
+    Avancer
+
+    
+FIN
