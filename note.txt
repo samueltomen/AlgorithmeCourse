@@ -138,3 +138,35 @@ DEBUT
     TournerDroite
     Avancer
 FIN
+
+ALGORITHME exerciceAlgo5
+VARIABLE
+    texte:STRING
+    grand:BOOLEAN
+    score:INTEGER
+DEBUT
+    texte<-""
+    grand<-TRUE
+    score<-0
+    Avancer
+    tournerGauche
+    Avancer
+    grand<- FALSE
+    Avancer
+    texte <- texte + "C"
+    Avancer
+    grand<-TRUE
+    tournerGauche
+    Avancer
+    score<- score + 10
+    Avancer
+    score<- score + 10
+    tournerGauche
+    Avancer
+    texte<-texte + "C"
+    tournerGauche
+    Avancer
+    grand<-FALSE
+    TournerDroite
+    Avancer
+FIN
