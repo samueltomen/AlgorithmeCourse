@@ -233,3 +233,83 @@ DEBUT
     FINSI
     Avancer
 FIN
+
+#ET
+ALGORITHME exerciceAlgo8
+VARIABLE
+    sexe:BOOLEAN
+    age:INTEGER
+DEBUT
+    sexe <- sexeDuPersonnage
+    age <- ageDuPersonnage
+    SI age > 20 ET sexe = TRUE //ET LOGIQUE
+    ALORS
+        AFFICHER "Vous pouvez entrer"
+        Avancer 
+    SINON
+        AFFICHER "Acces denied"
+        arretDeLalgo
+    FINSI
+    Avancer
+FIN
+
+#OU
+ALGORITHME exerciceAlgo9
+VARIABLE
+    sexe:BOOLEAN
+    age:INTEGER
+DEBUT
+    sexe <- sexeDuPersonnage
+    age <- ageDuPersonnage
+    SI age > 28 OU sexe = FALSE //OU LOGIQUE
+    ALORS
+        AFFICHER "Vous pouvez entrer"
+        Avancer 
+    SINON
+        AFFICHER "Acces denied"
+        arretDeLalgo
+    FINSI
+    Avancer
+FIN
+
+ALGORITHME exerciceAlgo9
+VARIABLE
+    grand:BOOLEAN
+DEBUT
+    grand <- TRUE
+    Avancer
+    SI grand = TRUE
+    ALORS 
+        grand <- FALSE
+        AFFICHER "Aïe"
+    SINON
+        AFFICHER "Ouille"
+    FINSI
+    tournerGauche
+    Avancer
+    SI recontreGrosseTete
+    ALORS
+        AFFICHER "Youpi" 
+        grand <- TRUE
+    FINSI
+    tournerGauche
+    Avancer
+    SI grand = TRUE
+    ALORS 
+        grand <- FALSE
+        AFFICHER "Aïe"
+    SINON
+        AFFICHER "Ouille"
+    FINSI
+    TournerDroite
+    Avancer
+    SI grand = TRUE
+    ALORS 
+        grand <- FALSE
+        AFFICHER "Aïe"
+    SINON
+        AFFICHER "Ouille"
+    FINSI
+FIN
+
+ALGORITHME refactoringExerciceAlgo9
