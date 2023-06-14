@@ -122,3 +122,19 @@ DEBUT
     TournerDroite
     Avancer
 FIN
+
+ALGORITHME exerciceAlgo4
+VARIABLE
+    taille:BOOLEAN
+DEBUT
+    taille <- TRUE
+    tournerGauche
+    Avancer
+    taille<- FALSE
+    Avancer
+    TournerDroite
+    Avancer
+    taille<-TRUE
+    TournerDroite
+    Avancer
+FIN
