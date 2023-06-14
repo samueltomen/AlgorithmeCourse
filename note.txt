@@ -353,25 +353,25 @@ DEBUT
     Avancer 
     SI touchePomme ALORS
         x <- x + 10
-        AFFICHER "Mon score est de x points"
+        AFFICHER "Mon score est de",x,"points"
     FINSI
     Avancer
     SI touchePomme ALORS
         x <- x + 10
-        AFFICHER "Mon score est de x points"
+        AFFICHER "Mon score est de",x,"points"
     FINSI
     TournerGauche
     Avancer
     SI touchePomme & x > 20 ALORS
         x <- x + 10
         grand = TRUE
-        AFFICHER "Mon score est de x points"
+        AFFICHER "Mon score est de",x,"points"
     FINSI
     TournerGauche
     Avancer
     SI touchePomme ALORS
         x <- x + 10
-        AFFICHER "Mon score est de x points"
+        AFFICHER "Mon score est de",x,"points"
     FINSI 
     Avancer
 FIN
