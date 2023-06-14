@@ -313,3 +313,65 @@ DEBUT
 FIN
 
 ALGORITHME refactoringExerciceAlgo9
+VARIABLE
+    grand:BOOLEAN
+DEBUT
+    grand <- TRUE 
+    Avancer
+    SI boiteRouge ET grand = TRUE
+        AFFICHER "Aïe"
+        grand <- FALSE
+    FINSI
+    TournerGauche
+    Avancer
+    SI rencontreGrosseTete ALORS
+        AFFICHER "Youpie"
+        grand <- TRUE
+    FINSI
+    TournerGauche
+    Avancer
+    SI boiteRouge ET grand = TRUE
+        AFFICHER "Aïe"
+        grand <- FALSE
+    FINSI
+    TournerDroite
+    Avancer
+    SI boiteRouge ET Grand = FALSE ALORS
+        AFFICHER "Ouille"
+    FINSI
+    TournerGauche
+    Avancer
+FIN
+
+ALGORITHME exerciceAlgo10
+VARIABLE
+    score:INTEGER
+    grand:BOOLEAN
+DEBUT
+    x <- 0
+    grand <- FALSE
+    Avancer 
+    SI touchePomme ALORS
+        x <- x + 10
+        AFFICHER "Mon score est de x points"
+    FINSI
+    Avancer
+    SI touchePomme ALORS
+        x <- x + 10
+        AFFICHER "Mon score est de x points"
+    FINSI
+    TournerGauche
+    Avancer
+    SI touchePomme & x > 20 ALORS
+        x <- x + 10
+        grand = TRUE
+        AFFICHER "Mon score est de x points"
+    FINSI
+    TournerGauche
+    Avancer
+    SI touchePomme ALORS
+        x <- x + 10
+        AFFICHER "Mon score est de x points"
+    FINSI 
+    Avancer
+FIN
