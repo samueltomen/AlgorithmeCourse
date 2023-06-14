@@ -172,4 +172,34 @@ DEBUT
 FIN
 
 #Les Test 
+ALGORITHME exerciceAlgo6
+VARIABLE 
+    key:BOOLEAN
+DEBUT
+    key <- FALSE
+    Avancer
+    TournerDroite
+    Avancer
+    key<-TRUE
+    tournerGauche
+    tournerGauche
+    Avancer
+    TournerDroite
+    SI key = TRUE ALORS
+        AFFICHER "Tu peux entrer"
+        Avancer
+        Avancer
+        FinDuJeu
+    SINON
+        AFFICHER "tu as besoin de la clef"
+    FINSI
+FIN
 
+ALGORITHME exerciceAlgo7
+VARIABLE
+    nom:STRING
+    age:INTEGER
+    sexe:BOOLEAN
+DEBUT
+
+FIN
