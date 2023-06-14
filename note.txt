@@ -197,9 +197,39 @@ FIN
 
 ALGORITHME exerciceAlgo7
 VARIABLE
-    nom:STRING
-    age:INTEGER
-    sexe:BOOLEAN
+    nomM:STRING
+    ageM:INTEGER
+    sexeM:BOOLEAN
+    nomF:STRING
+    ageF:INTEGER
+    sexeF:BOOLEAN
 DEBUT
+    nomM <- Milo
+    ageM <- 30
+    sexeM <- TRUE
+    nomF <- Tya
+    ageF <- 25
+    sexeF <- FALSE
+    SI ageM > 20 
+        ALORS
+            AFFICHER "Vous pouvez entrer"
+            Avancer
+    FINSI
+    SI ageF > 20 
+        ALORS
+            AFFICHER "Vous pouvez entrer"
+            Avancer
+    FINSI
+    SI ageM > 28
+        ALORS 
+            AFFICHER "Vous pouvez entrer"
+            Avancer
+    FINSI
 
+    SI ageF > 28
+        ALORS 
+            AFFICHER "Vous pouvez entrer"
+            Avancer
+    FINSI
+    Avancer
 FIN
