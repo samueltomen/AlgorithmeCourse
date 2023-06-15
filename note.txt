@@ -388,3 +388,49 @@ SELON faim //variable testé
 FINSELON
 
 
+-- -- ALGORITHME exerciceAlgo11 -- --
+
+VARIABLE 
+    x:INTEGER
+DEBUT
+
+    AFFICHER "Saisir un nombre entre 1 & 12"
+    SAISIR x
+    SELON x
+        CAS 1 : AFFICHER "Janvier"
+        CAS 2 : AFFICHER "Fevrier"
+        CAS 3 : AFFICHER "Mars"
+        CAS 4 : AFFICHER "Avril"
+        CAS 5 : AFFICHER "Mai"
+        CAS 6 : AFFICHER "Juin"
+        CAS 7 : AFFICHER "Juillet"
+        CAS 8 : AFFICHER "Aout"
+        CAS 9 : AFFICHER "Septembre"
+        CAS 10 : AFFICHER "Octobre"
+        CAS 11 : AFFICHER "Novembre"
+        CAS 12 : AFFICHER "Decembre"
+    AUTREMENT 
+        AFFICHER "Tu n'as pas saisi un nombre correct"
+    FINSELON
+
+FIN
+
+-- -- ALGORITHME exerciceAlgo12 -- --
+
+VARIABLE
+    jour:INTEGER
+DEBUT
+    SAISIR jour
+    SELON jour
+        CAS 1 : AFFICHER "Lundi"
+        CAS 2 : AFFICHER "Mardi"
+        CAS 3 : AFFICHER "Mercredi"
+        CAS 4 : AFFICHER "Jeudi"
+        CAS 5 : AFFICHER "Vendredi"
+        CAS 6 : AFFICHER "Samedi"
+        CAS 7 : AFFICHER "Dimanche"
+    AUTREMENT:
+        AFFICHER "Le jour saisi est inccorect"
+    FINSELON
+FIN
+
