@@ -37,3 +37,10 @@ pour chemin de 1 à 3 pas de 1 faire
     tournerGauche
 finfaire
 
+version amelioré
+pour i de 1 à 3 pas de 1 faire
+    pour j de 1 à 3 pas de 1 faire
+    avancer
+    finfaire
+    tournerGauche
+finfaire
