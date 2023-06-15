@@ -375,3 +375,16 @@ DEBUT
     FINSI 
     Avancer
 FIN
+
+#Instruction Selon
+Exemple
+
+SELON faim //variable testé 
+    CAS 0 //valeur testé
+    CAS 1 
+    CAS 2
+    CAS 3
+    AUTREMENT AFFICHER // permet d'afficher les autres cas si il ne correspondent pas au cas definie
+FINSELON
+
+
