@@ -4,7 +4,7 @@ pour compteur de 1 à 4 pas de 1 faire
     avancer
 finfaire
 
-
+---------
 algorithme exerciceBoucle1
 debut 
     avancer
@@ -19,28 +19,58 @@ debut
 fin 
 
 version amelioré
-
-pour chemin de 1 à 2 pas de 1 faire
+debut
+    pour chemin de 1 à 2 pas de 1 faire
+        avancer
+        TournerDroite
+        avancer
+        tournerGauche
+    finfaire
     avancer
-    TournerDroite
-    avancer
-    tournerGauche
-finfaire
-avancer
-
-
+fin
+----------
 algorithme exerciceBoucle2
-pour chemin de 1 à 3 pas de 1 faire
-    avancer
-    avancer
-    avancer
-    tournerGauche
-finfaire
+debut
+    pour chemin de 1 à 3 pas de 1 faire
+        avancer
+        avancer
+        avancer
+        tournerGauche
+    finfaire
+fin
 
 version amelioré
-pour i de 1 à 3 pas de 1 faire
-    pour j de 1 à 3 pas de 1 faire
-    avancer
+debut
+    pour i de 1 à 3 pas de 1 faire
+        pour j de 1 à 3 pas de 1 faire
+            avancer
+        finfaire
+        tournerGauche
     finfaire
-    tournerGauche
-finfaire
+fin
+----------
+algorithme exerciceBoucle3
+variable
+    tableDe2:INTEGER
+debut
+    tableDe2 <- 0
+    pour i de 1 à 10 pas de 1 faire
+        tableDe2 <- i * 2
+        afficher tableDe2
+    finfaire
+fin
+----------
+
+algorithme exerciceBoucle4
+variable
+    resultat:integer
+    nombre:integer
+debut
+    saisir nombre
+    resultat <- 1
+    pour i de 1 à nombre pas de 1 faire
+        resultat <- resultat * i
+    finfaire
+    afficher resultat
+fin
+
