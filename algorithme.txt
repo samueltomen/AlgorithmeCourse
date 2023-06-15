@@ -1,1 +1,35 @@
 #LES BOUCLES
+exemple
+pour compteur de 1 à 4 pas de 1 faire
+    avancer
+finfaire
+
+
+algorithme exerciceBoucle1
+debut 
+    avancer
+    tournerDroite
+    avancer
+    tournerGauche
+    avancer
+    tournerDroite
+    avancer
+    tournerGauche 
+    avancer
+fin 
+
+version amelioré
+
+pour chemin de 1 à 2 pas de 1 faire
+    avancer
+    TournerDroite
+    avancer
+    tournerGauche
+finfaire
+avancer
+
+
+algorithme exerciceBoucle2
+pour chemin de  à  pas de delta faire
+    
+finfaire
