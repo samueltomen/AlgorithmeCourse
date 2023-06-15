@@ -62,7 +62,7 @@ fin
 ----------
 
 algorithme exerciceBoucle4
-variable
+variable 
     resultat:integer
     nombre:integer
 debut
@@ -72,5 +72,66 @@ debut
         resultat <- resultat * i
     finfaire
     afficher resultat
+fin
+
+#Boucle tantQue 
+
+#cours 
+debut 
+    tant que (noFlagObtains) faire
+        avancer
+    finfaire
+fin
+
+#exercice 
+
+algorithme exericeTantQue1
+debut
+    pour i de 1 à 3 pas de 1 faire
+        tant que (pasDeMur) faire
+            avancer
+        finfaire
+        tournerGauche
+    finfaire
+fin
+
+algorithme exericeTantQue2
+
+variable
+    nombre:integer
+    resultat:integer
+
+debut
+    nombre <- 1
+    resultat <- 1
+    tant que (resultat < 1000) faire
+        resultat <- nombre * resultat 
+        nombre ++
+    finfaire
+    afficher resultat
+fin
+
+#TANTQUE 
+//Dans cette exemple obligation d'initialiser la variable avec nombreUser <- 0
+algorithme exerciceTantQue3
+variables
+    nombreUser:integer
+debut
+    nombreUser <- 0
+    tant que (nombreUser < 5) faire
+        saisir nombreUser
+        afficher : "saisissez un nouveau nombre"
+    finfaire
+fin
+
+#FAIRE TANTQUE 
+// Dans cette exemple on peut demander la saisie sans avoir a initialisé la variable
+Algorithme exerciceFaireTantQue
+Variable
+    nombreUser:integer
+debut
+    faire
+        saisir nombreUser
+    tant que nombreUser < 5
 fin
 
