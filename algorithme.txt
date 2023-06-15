@@ -30,6 +30,10 @@ avancer
 
 
 algorithme exerciceBoucle2
-pour chemin de  à  pas de delta faire
-    
+pour chemin de 1 à 3 pas de 1 faire
+    avancer
+    avancer
+    avancer
+    tournerGauche
 finfaire
+
