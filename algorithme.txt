@@ -153,3 +153,9 @@ debut
     avancer
 fin
 
+algorithme exerciceAlgo2
+variables
+
+debut
+
+fin
