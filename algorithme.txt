@@ -263,3 +263,11 @@ debut
 fin
 
 algorithme exericeAlgo8
+variable
+    etoile:string
+debut
+    etoile <- "*"
+    tant que (NON finDeFichier) faire
+        afficher <- etoile
+    finfaire
+fin
