@@ -193,3 +193,20 @@ debut
         finfaire
     finsi
 fin
+
+algorithme exericeAlgo3
+variable
+    chiffre1:integer
+    chiffre2:integer
+    resultat:integer
+debut
+    saisir: chiffre1
+    saisir: chiffre2
+    resultat <- chiffre1 +chiffre2
+    afficher resultat
+fin
+
+algorithme exericeAlgo3
+variable
+    
+    
