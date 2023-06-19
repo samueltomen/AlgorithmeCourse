@@ -271,3 +271,16 @@ debut
         afficher <- etoile
     finfaire
 fin
+
+algorithme exericeAlgo9
+variable
+    n:integer
+    resultat:integer
+debut
+    n <- aleatoire (1,20)
+    resultat <- 0
+    pour i de 1 à n pas de 1 faire
+        resultat <- resultat + i
+        afficher resultat
+    finfaire
+fin
