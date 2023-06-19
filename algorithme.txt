@@ -206,7 +206,27 @@ debut
     afficher resultat
 fin
 
-algorithme exericeAlgo3
+algorithme exericeAlgo4
 variable
-    
-    
+    chiffre1:integer
+    chiffre2:integer
+    resultat:integer
+debut
+    chiffre1 <- aleatoire(1,20)
+    chiffre2 <- aleatoire (1,20)
+    resultat <- chiffre1 - chiffre2
+    afficher resultat
+fin
+
+algorithme exericeAlgo5
+variables
+nombreUser:integer
+resultat:integer
+debut
+    saisr: nombreUser
+    resultat <- 0
+    pour i de 10 à 1 pas de -1 faire
+        resultat <- nombreUser * i
+        afficher resultat, "=", i, "*", nombreUser
+    finfaire
+fin
