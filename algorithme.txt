@@ -281,6 +281,6 @@ debut
     resultat <- 0
     pour i de 1 à n pas de 1 faire
         resultat <- resultat + i
-        afficher resultat
     finfaire
+        afficher: "le resultat est : ", resultat
 fin
