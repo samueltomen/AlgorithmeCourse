@@ -135,3 +135,21 @@ debut
     tant que nombreUser < 5
 fin
 
+algorithme exerciceAlgo1
+variables
+
+debut
+    tournerGauche
+    avancer
+    pour i de 1 à 3 pas de 1 faire
+        tournerGauche
+        avancer
+        tournerDroite
+        avancer
+        tournerDroite
+        Avancer
+    finfaire
+    tournerGauche
+    avancer
+fin
+
