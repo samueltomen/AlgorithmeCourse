@@ -230,3 +230,19 @@ debut
         afficher resultat, "=", i, "*", nombreUser
     finfaire
 fin
+
+algorithme exericeAlgo6
+variable
+    nombreUser:integer
+debut
+    faire saisir: userNombre
+        afficher "Veuillez saisir un nombre entre 10 & 20"
+        si (userNombre < 10) alors
+            afficher "trop petit"
+        sinonsi(userNombre > 20) alors
+            afficher "trop grand"
+        sinon
+            afficher "Ok c'est good"
+        finsi
+    tant que userNombre < 10 && > 20
+fin
