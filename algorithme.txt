@@ -299,4 +299,43 @@ fin
 
 ------------------------------- LES FONCTIONS -----------------------------
 
+#cours
+
+synthax 
+algorithme coursAlgo1
+debut 
+
+fonction test
+debut
+    avancer
+    tournerGauche 
+    score <- score +1 
+fin
+
+test // declencher utilisation de la fonction
+
+fin
+
+#exercice
+
+algorithme exericeAlgo1
+debut
+
+fonction bloc1
+    debut
+    avancer
+    tournerGauche
+    pour i de 1 à 2 pas de 1 faire
+        avancer
+        tournerDroite
+    finfaire
+    avancer
+    tournerGauche
+    fin
+tant que (pasDrapeau) faire
+    bloc1
+finfaire
+
+fin
+
 
