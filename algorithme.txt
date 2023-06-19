@@ -296,3 +296,7 @@ debut
         afficher tirets
     finfaire
 fin
+
+------------------------------- LES FONCTIONS -----------------------------
+
+
