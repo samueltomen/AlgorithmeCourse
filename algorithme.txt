@@ -284,3 +284,15 @@ debut
     finfaire
         afficher: "le resultat est : ", resultat
 fin
+
+algorithme exericeAlgo10
+variable
+    tirets:string
+    nombreUser:integer
+debut
+    saisir nombreUser
+    tirets <- "---------"
+    pour i de 0 à nombreUser pas de 1 faire
+        afficher tirets
+    finfaire
+fin
