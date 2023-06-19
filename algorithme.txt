@@ -155,7 +155,41 @@ fin
 
 algorithme exerciceAlgo2
 variables
-
+    score:INTEGER
+    key:BOOLEAN
 debut
-
+    score <- 0
+    key <- false
+    tournerGauche
+    pour i de 1 à 2 pas de 1 faire
+        avancer
+    finfaire
+    pour i de 1 a 2 pas de 1 faire
+        tournerGauche
+    finfaire
+    avancer
+    tournerGauche
+    si (key = true) alors
+        afficher "Vous pouvez passer"
+        avancer
+    sinon
+        afficher "Acces refuse"
+    finsi
+    pour i de 1 à 2 pas de 1 faire
+        avancer 
+        score<-score + 10
+        tournerGauche
+    finfaire
+    tournerGauche
+    pour i de 1 à 2 pas de 1 faire
+        avancer  
+    finfaire
+    score <- score + 10 
+    si (score >= 30 ) alors
+        afficher "Vous pouvez passer"
+        avancer
+    sinon
+        afficher "acces denied"   
+        finfaire
+    finsi
 fin
