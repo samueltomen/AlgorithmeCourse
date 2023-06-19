@@ -235,8 +235,9 @@ algorithme exericeAlgo6
 variable
     nombreUser:integer
 debut
-    faire saisir: userNombre
+    faire 
         afficher "Veuillez saisir un nombre entre 10 & 20"
+        saisir: userNombre
         si (userNombre < 10) alors
             afficher "trop petit"
         sinonsi(userNombre > 20) alors
@@ -244,5 +245,21 @@ debut
         sinon
             afficher "Ok c'est good"
         finsi
-    tant que userNombre < 10 && > 20
+    tant que userNombre < 10 || userNombre > 20
 fin
+
+algorithme exericeAlgo7
+variable
+    langage:integer
+debut
+    langage <- aleatoire(1,4) 
+    selon langage
+        cas 1 : afficher "Hello"
+        cas 2 : afficher "Bonjour"
+        cas 3 : afficher "Hola"
+        cas 4 : afficher "Halo"
+        autrement: afficher "je n'ai pas compris"
+    finselon
+fin
+
+algorithme exericeAlgo8
