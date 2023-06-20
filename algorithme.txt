@@ -335,7 +335,29 @@ fonction bloc1
 tant que (pasDrapeau) faire
     bloc1
 finfaire
-
 fin
 
+algorithme exerciceFonction1
+variable
+welcome:string
+debut
 
+fonction addPseudo (pseudo)
+    debut
+        welcome <- "bonjour", pseudo
+        afficher welcome
+        // afficher "bonjour", pseudo
+    fin
+addPseudo ("charlie")
+fin
+
+algorithme exerciceFonction2
+
+fonction pairOrNot (nombre)
+    debut
+        si (nombre mod 2 = 0) alors
+            afficher "le nombre est pair"
+        sinon
+            afficher "le nombre n'est pas pair"
+        finsi    
+fin
