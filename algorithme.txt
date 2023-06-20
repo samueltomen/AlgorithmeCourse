@@ -447,3 +447,57 @@ debut
     afficher returnStringHello(nom, prenom)
 fin
 
+// Exerice final fonction
+fonction afficherMenu(choix)
+debut
+    si (choix = 1) alors
+        retourner true 
+    sinon 
+        retourner false
+    finsi
+fin
+
+fonction vectorielNombre (nombreVec)
+    variables
+    resultat:integer
+
+    debut
+        pour i de 1 à nombreVec pas de 1 faire
+            resultat <- resultat * i
+        finfaire 
+        retourner resultat
+    fin
+
+fonction sommeNombre (nombreSom)
+    variables 
+    resultat:integer
+    
+    debut
+        pour i de 1 à nombreSom pas de 1 faire
+            resultat <- resultat + i
+        finfaire
+        retourner resultat
+    fin
+
+// Algorithme exerice final
+
+algorithme finalFonction 
+variable
+    nombreUser:integer
+    choix:integer
+    
+debut
+
+    afficher "Veuillez saisir un nombre"
+    saisir nombreUser
+
+    afficher "Veuillez saisir votre programme 1 pour les vec 2 || pour les N premiers"
+    saisir choix
+    afficherMenu(choix)
+
+    si (choix) alors
+        afficher vectorielNombre(nombreUser)
+    sinon
+        afficher sommeNombre(nombreUser)
+    finsi
+fin
