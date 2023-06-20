@@ -426,3 +426,24 @@ debut
         afficher nombre, "est divible par 5"
     finsi
 fin
+
+//Ma fonction 
+
+fonction returnStringHello (nom, prenom)
+    debut
+        retourner "Bonjour",nom , " ", prenom
+    fin
+
+//Utilisation fonction
+
+algorithme printNomPrenom
+variables
+nom:string
+prenom:string
+
+debut
+    saisir nom
+    saisir prenom
+    afficher returnStringHello(nom, prenom)
+fin
+
