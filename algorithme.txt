@@ -450,7 +450,7 @@ fin
 // Exerice final fonction
 fonction afficherMenu
 debut
-    monMenu <- "1/factorielle"
+    monMenu <- "1/ Factorielle"
     monMenu <- monMenu + "2/Somme"
     monMenu <- monMenu + "0/Quitter"
     afficher monMenu
@@ -510,3 +510,6 @@ debut
         afficher "le resultat est", resultat
     tant que choix != 0
 fin
+
+
+--------------------------- LES TABLEAUX --------------------------
