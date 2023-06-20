@@ -407,6 +407,7 @@ debut
     finsi
 fin
 
+// Ma fonction
 fonction divisiblePar5 (nombre)
     debut
         si (nombre mod 5 = 0 )alors
@@ -415,12 +416,13 @@ fonction divisiblePar5 (nombre)
             retourner false
     fin
 
+//Son utilisation dans un contexte d'algorithme
 algorithme main
-variable
+variables
 nombre:integer
 debut
     saisir nombre 
     si divisiblePar5 (nombre) alors
-        afficher " ce nombre est divible par 5"
+        afficher nombre, "est divible par 5"
     finsi
 fin
