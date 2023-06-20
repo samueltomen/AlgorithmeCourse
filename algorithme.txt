@@ -361,3 +361,12 @@ fonction pairOrNot (nombre)
             afficher "le nombre n'est pas pair"
         finsi    
 fin
+
+fonction moyenneDe3 (nombre1,nombre2,nombre3)
+variable
+    resultat:integer 
+debut
+    resultat <- nombre1 + nombre2 + nombre3
+    resultat <- resultat/3
+    afficher resultat 
+fin
