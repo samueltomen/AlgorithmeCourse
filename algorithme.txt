@@ -448,21 +448,21 @@ debut
 fin
 
 // Exerice final fonction
-fonction afficherMenu(choix)
+fonction afficherMenu
 debut
-    si (choix = 1) alors
-        retourner true 
-    sinon 
-        retourner false
-    finsi
+    monMenu <- "1/factorielle"
+    monMenu <- monMenu + "2/Somme"
+    monMenu <- monMenu + "0/Quitter"
+    afficher monMenu
 fin
 
-fonction vectorielNombre (nombreVec)
+fonction factorielNombre (nombreFac)
     variables
     resultat:integer
 
     debut
-        pour i de 1 à nombreVec pas de 1 faire
+    resultat <- 1
+        pour i de 1 à nombreFac pas de 1 faire
             resultat <- resultat * i
         finfaire 
         retourner resultat
@@ -473,6 +473,7 @@ fonction sommeNombre (nombreSom)
     resultat:integer
     
     debut
+    resultat <- 0
         pour i de 1 à nombreSom pas de 1 faire
             resultat <- resultat + i
         finfaire
@@ -483,21 +484,28 @@ fonction sommeNombre (nombreSom)
 
 algorithme finalFonction 
 variable
-    nombreUser:integer
     choix:integer
-    
+    nombreUser:integer
+    resultat:integer
+    utilisateurDemande:boolean
+
 debut
 
-    afficher "Veuillez saisir un nombre"
-    saisir nombreUser
+    faire
 
-    afficher "Veuillez saisir votre programme 1 pour les vec 2 || pour les N premiers"
-    saisir choix
-    afficherMenu(choix)
+        afficherMenu
+        afficher "Choisissez votre programme"
+        saisir choix
 
-    si (choix) alors
-        afficher vectorielNombre(nombreUser)
-    sinon
-        afficher sommeNombre(nombreUser)
-    finsi
+        afficher "Veuillez saisir un nombre"
+        saisir nombreUser
+
+        selon choix
+            cas 1 : resultat<- nombreFactorielle(nombreUser)
+            cas 2 : resultat <- sommeNombre(nombreUser)
+            cas 3 : afficher "Au revoir"
+            autrement: afficher "je n'ai pas compris votre choix"
+        finselon
+        afficher "le resultat est", resultat
+    tant que utilisateurDemande
 fin
