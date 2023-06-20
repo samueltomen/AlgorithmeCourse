@@ -494,6 +494,7 @@ debut
     faire
 
         afficherMenu
+
         afficher "Choisissez votre programme"
         saisir choix
 
@@ -507,5 +508,5 @@ debut
             autrement: afficher "je n'ai pas compris votre choix"
         finselon
         afficher "le resultat est", resultat
-    tant que utilisateurDemande
+    tant que choix != 0
 fin
