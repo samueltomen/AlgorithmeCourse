@@ -370,3 +370,57 @@ debut
     resultat <- resultat/3
     afficher resultat 
 fin
+
+//Premiere
+fonction verificationID (age , sexe)
+    debut
+        si (age < 18 )alors
+            afficher "trop jeune"
+            si (sexe = true )alors
+                afficher "Homme"
+            sinon 
+                afficher "Femme"
+        sinon
+            si (age > 30 )
+                afficher "trop vieux"
+                si (sexe = true )alors
+                afficher "Homme"
+            sinon 
+                afficher "Femme"
+        sinon
+            afficher "Tu peux entrer" , sexe
+        finsi
+    fin
+
+//Deuxieme
+fonction verificationID2 (age, sexe)
+debut
+    si(age < 18 )
+        afficher "trop jeune"
+    sinonsi
+        afficher "trop vieux"
+    finsi
+    si (sexe)
+        afficher "homme"
+    sinonsi 
+        afficher "femme"
+    finsi
+fin
+
+fonction divisiblePar5 (nombre)
+    debut
+        si (nombre mod 5 = 0 )alors
+            retourner true
+        sinon
+            retourner false
+    fin
+
+algorithme main
+variable
+nombre:integer
+debut
+    saisir nombre 
+    si divisiblePar5 (nombre) alors
+        afficher " ce nombre est divible par 5"
+    finsi
+fin
