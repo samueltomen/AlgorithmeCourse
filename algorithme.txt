@@ -598,5 +598,44 @@ debut
 fin
 
 
+//Exercice3
+algorithme exerciceAlgo3
+variable
+t[n]:tableau string
+char:string
+choix:integer
+
+debut
+    choix <- 1
+    Afficher "Entrer une lettre"
+    faire
+    saisir char 
+    t[n] <- char
+    afficher "Voulez vous rajouter une lettre"
+    selon choix
+        cas 1  <- "Oui"
+        cas 2 <- "Non"
+    finselon
+    tant que choix = 1 
+fin
+
+//Exercice3 correction
+
+algorithme exercice3
+variable 
+lettre[a]:tableau string
+quitter:string
+cpt<- entier
+
+debut
+    cpt <- 0
+    faire 
+        saisir lettre[cpt]
+        cpt ++ 
+        afficher "voulez vous continuez ?"
+        saisir quitter
+    tant que quitter != "N"
+fin
+
 
 
