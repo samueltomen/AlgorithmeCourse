@@ -513,3 +513,20 @@ fin
 
 
 --------------------------- LES TABLEAUX --------------------------
+algorithme arrayStudy
+
+variable 
+t[n]:tableau entier
+
+debut
+
+t[0] <- 4
+t[1] <- 5
+t[2] <- 6
+t[3] <- 7
+afficher t[2] //resultat 6
+
+//boucle for 
+
+
+fin
