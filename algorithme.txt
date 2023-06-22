@@ -653,24 +653,58 @@ debut
     displayArray(t1[n])
 fin
 
-fonction calcArray (tab)
+fonction calcArray (array)
     variables
     resultat:integer
     resultat<-0
     debut
-        pour i de 0 à taille (tab) pas de 1 faire
-            si (tab[i] < 10) alors
-                resultat <- resultat + i 
+        pour i de 0 à taille (array)-1 pas de 1 faire
+            si (array[i] < 10) alors
+                resultat <- resultat + array[i] 
             sinon
-                afficher tab[i] "superieur"
+                afficher array[i] "superieur"
             finsi
             retourner resultat
         finfaire
     fin
 
-algo e
+algo exo5
+variables
+tab[n]:tableau entier
+
+debut
+    pour i de 0 à 10 pas de 1 faire
+        tab[i]<- aleatoire(1,50)
+    finfaire
+fin
+
+afficher calcArray(tab) 
 
 
+fonction averageArray (tab1, tab2)
+    variables
+    resultatTab1
+    resultatTab2
+    averageTab1
+    averageTab2
+
+    debut
+        pour i de 0 à taille (tab1)-1 pas de 1 faire
+            resultatTab1 <- resultatTab1 + tab1[i]
+        finfaire
+        pour i de 0 à taille(tab2)-1 pas de 1 faire
+            resultatTab2 <- resultatTab2 +tab2[i] 
+        finfaire
+
+        averageTab1 <- resultatTab1 / taille (tab1)
+        averageTab2 <- resultatTab2 / taille (tab2)
+
+        si (averageTab1 > averageTab2) alors
+            retourner "true"
+        sinon
+            retourner "false"
+        finsi
+    fin
 
 
 
