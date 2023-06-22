@@ -637,5 +637,40 @@ debut
     tant que quitter != "N"
 fin
 
+fonction displayArray (tab)
+    debut 
+        pour cpt de 0 à taille (tab)-1 pas de 1 faire
+            afficher tab[cpt]
+        finfaire
+    fin
+
+algorithme exo4
+variable
+t1[n]:tableau entier
+
+debut
+    t1[n]<- [1,2,3,4,5,6]
+    displayArray(t1[n])
+fin
+
+fonction calcArray (tab)
+    variables
+    resultat:integer
+    resultat<-0
+    debut
+        pour i de 0 à taille (tab) pas de 1 faire
+            si (tab[i] < 10) alors
+                resultat <- resultat + i 
+            sinon
+                afficher tab[i] "superieur"
+            finsi
+            retourner resultat
+        finfaire
+    fin
+
+algo e
+
+
+
 
 
