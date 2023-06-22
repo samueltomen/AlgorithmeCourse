@@ -706,5 +706,19 @@ fonction averageArray (tab1, tab2)
         finsi
     fin
 
+fonction paramsArray (tab1)
+    variables
+    supTab[n]:tableau entier
+    infTab[n]: tableau entier
 
+
+    pour i de 0 à taille (tab1)-1 pas de 1 faire
+        si (tab1[i] > 10 ) alors
+            supTab <- supTab[i] + tab[i]
+        sinon
+            infTab <- infTab[i] + tab[i]
+        finsi
+        retourner supTab
+        retourner infTab
+    finfaire
 
