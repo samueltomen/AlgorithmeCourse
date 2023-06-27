@@ -723,6 +723,7 @@ fonction paramsArray (tab1)
     finfaire
 
 
+//Fonction permettant a l'utilisateur de saisir un nombre de mot , ceci seront rentré dans un tableau
 fonction enterWord (words:integer)
     variable
     mot[n]:tableau string
@@ -735,3 +736,17 @@ fonction enterWord (words:integer)
     fin
 
 
+// Fonction qui permet de savoir si un tableau passé en parametre contient que des valeurs paires
+
+fonction trueOrFalse (tab)
+    variables
+
+    pour i de 0 à taille (tab) -1 pas de 1 faire
+        si ((tab[i] % 2) != 0) alors
+            retourner false
+        sinon 
+            retourner true 
+        finsi 
+    finfaire
+
+    
