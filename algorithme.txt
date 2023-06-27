@@ -722,3 +722,16 @@ fonction paramsArray (tab1)
         retourner infTab
     finfaire
 
+
+fonction enterWord (words:integer)
+    variable
+    mot[n]:tableau string
+
+    debut
+        pour i de 0 à words - 1 pas de 1 faire
+            saisir mots[i]
+        finfaire
+        retourner mots
+    fin
+
+
