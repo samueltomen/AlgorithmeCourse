@@ -737,13 +737,13 @@ fonction enterWord (words:integer)
 
 
 // Fonction qui permet de savoir si un tableau passé en parametre contient que des valeurs paires
-
 fonction trueOrFalse (tab)
     pour i de 0 à taille (tab) -1 pas de 1 faire
-        si ((tab[i] % 2) != 0 && i = taille(tab)-1 ) alors
+        si ((tab[i] % 2) != 0) alors
             retourner false
         finsi 
     finfaire
-    returner true 
+    returner true
+
 
 
