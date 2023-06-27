@@ -747,3 +747,40 @@ fonction trueOrFalse (tab)
 
 
 
+/* Fonction qui prend en paramètre un tableau et un chiffre . Si une valeur du tableau est superieur à 20 celle ci sera multiplié par le chiffre entré en 2eme
+paramètres puis chaque valeur testé sera additionné après avoir été multiplié  */
+
+fonction arrayVsNumber (arr, chiffre)
+    variables
+    value1:integer
+    resultat:integer
+
+    value1 <- 0
+    resultat <- 0
+
+    pour i de 0 à taille (arr)-1 pas de 1 faire
+        si (arr[i] > 20) alors
+            value1 <- 0
+            value1 <- arr[i] * chiffre
+            resultat <- resultat + value1
+        finsi
+    finfaire
+    retourner resultat
+
+//refactoring
+
+fonction arrayVsNumber (arr, chiffre)
+    variables
+    resultat:integer
+
+    debut
+    resultat <- 0
+    pour i de 0 à taille (arr)-1 pas de 1 faire
+        si (arr[i] > 20) alors
+            resultat <- resultat + arr[i] * chiffre
+        finsi
+    finfaire
+    retourner resultat
+    fin
+
+ 
