@@ -783,4 +783,42 @@ fonction arrayVsNumber (arr, chiffre)
     retourner resultat
     fin
 
- 
+//Auto Evaluation
+
+// Exercice 2
+
+fonction gauche (milo)
+    tournerGauche
+    avancer
+    tournerGauche
+    pour i de 1 à 4 pas de 1 faire
+        avancer
+    finfaire
+
+fonction droite (milo)
+    tournerDroite
+    avancer
+    tournerDroite
+    pour i de 1 à 4 pas de 1 faire
+        avancer
+    finfaire
+
+
+algorithme exercicePt2 
+
+pour i de 1 à 4 pas de 1 faire
+    avancer
+finfaire
+pour i de 1 à 2 pas de 1 faire
+    fonction droite 
+    fonction gauche
+    fonction droite
+    fonction gauche 
+finfaire
+fonction droite
+avancer
+
+//Exercice 3 
+//Trouver les erreurs 
+
+Milo avance 3 fois au lieu de 2
