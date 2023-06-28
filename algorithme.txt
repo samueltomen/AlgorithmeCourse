@@ -827,3 +827,20 @@ Milo avance 3 fois au lieu de 2
 
 // ----------------- Algorithme de tri --------------------
 
+//Le tri d'insertion
+fonction triInsert(tab:entier)
+variabloes 
+valeur : entier
+cpt: entier
+
+debut
+    pour i de 1 à taille(tab)-1 pas de 1 faire
+        valeur <- tab[i]
+        cpt <- i
+        tant que (cpt > 0 et tab[cpt -1]>valeur) faire
+            tab[cpt]<-tab[cpt -1]
+            cpt <- cpt -1
+        finfaire
+        tab[cpt]<- valeur 
+    finfaire
+fin
