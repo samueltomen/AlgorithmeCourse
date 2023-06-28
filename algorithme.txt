@@ -844,3 +844,5 @@ debut
         tab[cpt]<- valeur 
     finfaire
 fin
+
+//Le tri par selection
