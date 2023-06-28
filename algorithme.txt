@@ -869,3 +869,19 @@ variables
 
 //Le tri a bulles 
 
+fonction triBulle(tab:entier)
+variables
+    tmp:entier
+
+debut
+    pour i de taille(tab)-1 à 1 pas de 1 faire
+        pour j de 0 à i-1 pas de 1 faire
+            si tab[j + 1]<tab[j]alors
+                tmp = tab[j+1]
+                tab[j+1] = tab[j]
+                tab[j] = tmp
+            finsi
+        finfaire
+    finfaire
+fin
+
