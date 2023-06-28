@@ -846,3 +846,23 @@ debut
 fin
 
 //Le tri par selection
+fonction triSelect(tab:entier)
+variables
+    min:entier
+    tmp:entier
+
+    debut
+        pour i de 0 à taille(tab)-2 pas de 1 faire
+            min <- i
+                pour j de i+1 à taille(tab)-1 pas de 1 faire
+                    si tab[j] < tab[min] alors
+                        min <- j
+                    finsi
+                finfaire
+                si min != i alors 
+                    tmp = tab[i]
+                    tab[i]= tab[min]
+                    tab[min]= tmp
+                finsi
+        finfaire
+    fin
