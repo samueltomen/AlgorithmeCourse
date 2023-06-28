@@ -820,5 +820,10 @@ avancer
 
 //Exercice 3 
 //Trouver les erreurs 
-
 Milo avance 3 fois au lieu de 2
+
+//FIN
+
+
+// ----------------- Algorithme de tri --------------------
+
