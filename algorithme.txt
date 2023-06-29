@@ -920,3 +920,14 @@ fin
 
 //Tableau multidimensionnels
 
+algorithme tabName 
+variables
+    tab[firstName][lastName]:tableau string
+debut
+
+    tab[firstName][lastName]<- [[Tya, MILO],[Marco, POLO],[Pablo,Picasso]]
+    pour i de 0 à taille(tab)-1 pas de 1 faire
+        afficher tab[i][0],"-",tab[i][1]
+    finfaire
+fin
+
