@@ -909,3 +909,14 @@ debut
 fin
 
 //Exercice 
+fonction factrorielle (nbr:entier)
+debut
+    si (nbr = 1)   alors
+        retourne 1
+    sinon 
+        retourne nbr * factorielle (nbr - 1)
+    finsi
+fin
+
+
+
