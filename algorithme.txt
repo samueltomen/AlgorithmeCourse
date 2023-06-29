@@ -887,6 +887,7 @@ fin
 
 //Recherche Dichotomique 
 //Permet d'optimiser la recherche dans un tableau trié , pour eviter de parcourir tout le tableau pour trouver une valeur 
+//Definiton fonction recursive : fonction qui se rapellle elle même mais qui a une conditon d'arret 
 
 fonction recherche(elementRecherche:entier, tab:tableau entier)
 variables
@@ -894,6 +895,17 @@ variables
 debut
     milieu<-taille(tab/2)
     si tab[milieu] = elementRecherche alors
-        retourner milieu
+        retourner milieu //condition d'arrêt 
+    sinon
+        si tab[milieu]< elementRecherche alors
+            // recherche partie inferieure
+            //utilisation d'une fonction recursive (fonction qui se rapelle elle même)
+            retourne recherche(elementRecherche, tab[0:milieu]) // on suppose que tab[0:milieu] ne prend que la partie inferieur ( de 0 au milieu du tab)
+        sinon
+            // rechercher partie superieure
+            retourne recherche(elementRecherche, tab[milieu:taille(tab)-1]) // même chose mais pour la partie superieur 
+        finsi
     finsi
 fin
+
+//Exercice 
