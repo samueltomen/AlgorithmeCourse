@@ -886,3 +886,14 @@ debut
 fin
 
 //Recherche Dichotomique 
+//Permet d'optimiser la recherche dans un tableau trié , pour eviter de parcourir tout le tableau pour trouver une valeur 
+
+fonction recherche(elementRecherche:entier, tab:tableau entier)
+variables
+    milieu:entier
+debut
+    milieu<-taille(tab/2)
+    si tab[milieu] = elementRecherche alors
+        retourner milieu
+    finsi
+fin
