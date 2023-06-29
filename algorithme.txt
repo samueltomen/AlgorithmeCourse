@@ -931,3 +931,23 @@ debut
     finfaire
 fin
 
+//Exercice calcul de moyenne
+
+algorithme averageStudent 
+variables
+    tab[n][n]:tableau entier
+    average:entier
+debut
+    average <- 0
+    tab[n][n]<-[[4,17],[11,12],[12,14]]
+
+    pour i de 0 à taille(tab)-1 pas de 1 faire
+        average <- tab[i][0] + tab[i][1]
+        average <- average / 2
+        retourne average
+    finfaire
+fin
+
+//solution 
+//Creer une fonction qui permet de calculer la moyenne en lui passant un tableau en parametre , 
+//dans l'algo creer 3 variables , et dans ces variables pour chaque case du tableau passé le numero de la case a la fonction et ensuite l'attribué a la variables
